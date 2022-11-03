@@ -38,8 +38,8 @@
     font-size: 36px;
     cursor: pointer;
 }
-.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
-    color: #008000;
+.fab:hover {
+    color: aqua;
 }
 .fab {
     color: #000000;
@@ -51,10 +51,10 @@
 }
 
 /* spacing on all sections */
-#about, #services, #portfolio, #contact {
+#about, #code, #music, #contact {
     margin-top: 4rem;
     padding-top: 4rem;
 }
-#contact {
+#code {
     padding-bottom: 4rem;
 }

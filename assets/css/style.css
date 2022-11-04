@@ -33,6 +33,14 @@
     border-radius: 5px;
 }
 
+.about-text a{
+    text-decoration: none;
+    color: #00c2cb;
+}
+.about-text a:hover {
+    color: cyan
+}
+
 /* music section styling */
 audio {
     width: 100%;
@@ -70,8 +78,4 @@ audio {
 }
 #code {
     padding-bottom: 4rem;
-}
-
-body {
-    background-color: color #d4a19b;
 }

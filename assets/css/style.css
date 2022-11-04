@@ -38,6 +38,12 @@
     font-size: 36px;
     cursor: pointer;
 }
+.social-icons a {
+    color: #000000
+}
+.social-icons a:hover {
+    color: aqua;
+}
 .fab:hover {
     color: aqua;
 }

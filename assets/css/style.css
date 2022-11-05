@@ -1,9 +1,20 @@
 /* hero background image */
-.bgimage {
+/* .bgimage {
     height:100vh;
     background: url('../images/mountain-bg.jpg');
     background-size:cover;
     position:relative;
+} */
+
+body {
+    background-image: url("../images/mountain-bg.jpg");
+    background-size: cover;
+    background-position: inherit;
+    background-attachment: fixed;
+}
+
+.splash {
+    height: 100vh;
 }
 
 /* display background color black on navbar scroll */
@@ -27,12 +38,16 @@
     color: white;
 }
 
-/* about section image css */
+/* about section css */
 .imageAboutPage {
     width: 100%;
     border-radius: 5px;
 }
-
+.about-section {
+    background-color: rgba(255,255,255,0.75);
+    padding: 40px;
+    border-radius: 15px;
+}
 .about-text a{
     text-decoration: none;
     color: #00c2cb;
@@ -40,11 +55,28 @@
 .about-text a:hover {
     color: cyan
 }
+.reference {
+    list-style-type: none;
+}
+.reference li {
+    font-weight: bold;
+}
+
+/* card styling */
+.project-card {
+    background-color: rgba(255,255,255,0.81);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
 
 /* music section styling */
 audio {
     width: 100%;
     height: 3.33rem;
+}
+audio::-webkit-media-controls-panel {
+    background-color: #6C757D;
 }
 
 /* social media icons styling */
@@ -78,4 +110,41 @@ audio {
 }
 #code {
     padding-bottom: 4rem;
+}
+
+/* badge colors */
+.html-badge {
+    background-color: #e34c26;
+}
+
+.js-badge {
+    background-color: #f1e05a;
+}
+
+.node-badge {
+    background-color: #eda828;
+}
+
+.ex-badge {
+    background-color: #d9ed28;
+}
+
+.css-badge {
+    background-color: #563d7c;
+}
+
+.cpp-badge {
+    background-color: #f34b7d;
+}
+
+.mongo-badge {
+    background-color: #28ed60;
+}
+
+.react-badge {
+    background-color: #61dafb;
+}
+
+.gql-badge {
+    background-color: #e10098;
 }

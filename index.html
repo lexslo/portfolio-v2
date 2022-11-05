@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lex Slovik - Portfolio</title>
     <!-- Link CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
 
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top navbarScroll">
+    <nav class="navbar navbar-dark navbarDark navbar-expand-lg fixed-top navbarScroll">
         <div class="container">
             <a class="navbar-brand" href="#">Lex Slovik</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +42,7 @@
     </nav>
 
      <!-- main banner -->
-     <section class="bgimage" id="home">
+     <!-- <section class="bgimage" id="home">
         <div class="container-fluid">
             <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
@@ -51,11 +51,23 @@
             </div>
             </div>
         </div>
+    </section> -->
+
+    <!-- splash / home section -->
+    <section id="home">
+        <div class="splash container mt-3">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                    <h2 class="hero_title">Hi, my name is Lex</h2>
+                    <p class="hero_desc">I am a musician and software engineer</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- about section-->
     <section id="about">
-        <div class="container mt-4 pt-4">
+        <div class="about-section container mt-4 pt-4">
             <h1 class="text-center">🏳️‍🌈 About Me</h1>
             <div class="row mt-4">
                 <div class="col-lg-3">
@@ -67,7 +79,7 @@
                         My name is Lex and my pronouns are they/them/theirs. 
                     </h4>
                     <p>
-                        I am a proud queer person and a member of the <a href="https://outintech.com/" target="_blank">Out In Tech</a> community!
+                        I am non-binary, queer, and a proud member of the <a href="https://outintech.com/" target="_blank"><b>Out In Tech</b></a> community!
                     </p>
                     <div class="row mt-3">
                         <p>
@@ -80,24 +92,24 @@
                     <h3>References</h3>
                     <div class="row mt-3">
                         <div class="col-md-4">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Robin Soto</li>
-                                <li class="list-group-item"><a href="mailto:robin.j.soto@gmail.com">robin.j.soto@gmail.com</a></li>
-                                <li class="list-group-item"><a href="https://www.linkedin.com/in/robin-soto/">LinkedIn</a></li>
+                            <ul class="reference">
+                                <li>Robin Soto</li>
+                                <li><a href="mailto:robin.j.soto@gmail.com">robin.j.soto@gmail.com</a></li>
+                                <li><a href="https://www.linkedin.com/in/robin-soto/">LinkedIn</a></li>
                             </ul>
                         </div>
                         <div class="col-md-4">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Brittany Dionigi</li>
-                                <li class="list-group-item"><a href="mailto:brittanydionigi@lyft.com">brittanydionigi@lyft.com</a></li>
-                                <li class="list-group-item"><a href="https://www.linkedin.com/in/brittanydionigi/">LinkedIn</a></li>
+                            <ul class="reference">
+                                <li>Brittany Dionigi</li>
+                                <li><a href="mailto:brittanydionigi@lyft.com">brittanydionigi@lyft.com</a></li>
+                                <li><a href="https://www.linkedin.com/in/brittanydionigi/">LinkedIn</a></li>
                             </ul>
                         </div>
                         <div class="col-md-4">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Jen Gilbert</li>
-                                <li class="list-group-item"><a href="mailto:jgilbert@lyft.com">jgilbert@lyft.com</a></li>
-                                <li class="list-group-item"><a href="https://www.linkedin.com/in/jenniferhgilbert/">LinkedIn</a></li>
+                            <ul class="reference">
+                                <li>Jen Gilbert</li>
+                                <li><a href="mailto:jgilbert@lyft.com">jgilbert@lyft.com</a></li>
+                                <li><a href="https://www.linkedin.com/in/jenniferhgilbert/">LinkedIn</a></li>
                             </ul>
                         </div>
                     </div>
@@ -108,74 +120,67 @@
     <!-- code section-->
     <section id="code">
         <div class="container mt-3">
-            <h1 class="text-center"><i class="fa-solid fa-code"></i> Code</h1>
+            <h1 class="text-center text-light"><i class="fa-solid fa-code"></i> Code</h1>
             <div class="row">
                 <div class="col-lg-4 mt-4">
-                    <div class="card">
+                    <div class="card project-card">
                         <img class="card-img-top" src="assets/images/delazed-default-gui.png" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Delazed</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Digital Audio Effect Plug-in</h6>
                             <p class="card-text about-text">
                                 Role: Creator, UI/UX Design
-                                <br>
-                                <span class="badge text-bg-info">C++</span>
-                                <span class="badge text-bg-info">JUCE</span>
-                                <span class="badge text-bg-info">XCode</span>
                             </p>
-                            <div class="text-center">
-                                <a href="https://github.com/lexslo/delazed" target="_blank" class="btn btn-success">GitHub</a>
-                            </div>
+                            <a href="https://github.com/lexslo/delazed" target="_blank" class="btn btn-secondary">GitHub</a>
+                        </div>
+                        <div class="card-footer">
+                            <span class="badge cpp-badge">C++</span>
+                            <span class="badge text-bg-info">JUCE</span>
+                            <span class="badge text-bg-info">XCode</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="assets/images/happy-harvest-ss.jpeg" alt="Card image" style="width:100%">
+                    <div class="card project-card">
+                        <img class="card-img-top" src="assets/images/harvest-ss-2.png" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Happy Harvesters</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Browser Based Game</h6>
                             <p class="card-text about-text">
                                 Role: Backend Developer
-                                <br>
-                                <span class="badge text-bg-info">JavaScript</span>
-                                <span class="badge text-bg-info">Node.js</span>
-                                <span class="badge text-bg-info">Express.js</span>
-                                <br>
-                                <span class="badge text-bg-info">MongoDB</span>
-                                <span class="badge text-bg-info">React</span>
-                                <span class="badge text-bg-info">GraphQL</span>
                             </p>
-                            <div class="text-center">
-                                <a href="https://github.com/lexslo/apple-orchard-games" target="_blank" class="btn btn-success">GitHub</a>
-                                <a href="https://happy-harvesters.herokuapp.com/" target="_blank" class="btn btn-success">Deployed</a>
-                            </div>
+                            <a href="https://github.com/lexslo/apple-orchard-games" target="_blank" class="btn btn-secondary">GitHub</a>
+                            <a href="https://happy-harvesters.herokuapp.com/" target="_blank" class="btn btn-secondary">Deployed</a>
+                        </div>
+                        <div class="card-footer">
+                            <span class="badge node-badge">Node.js</span>
+                            <span class="badge ex-badge text-dark">Express.js</span>
+                            <span class="badge mongo-badge text-dark">MongoDB</span>
+                            <span class="badge react-badge text-dark">React</span>
+                            <span class="badge gql-badge">GraphQL</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
+                    <div class="card project-card">
                         <img class="card-img-top" src="assets/images/randm-ss.png" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Randm</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Dating App</h6>
                             <p class="card-text about-text">
                                 Role: Full Stack Developer
-                                <br>
-                                <span class="badge text-bg-info">JavaScript</span>
-                                <span class="badge text-bg-info">HTML</span>
-                                <span class="badge text-bg-info">CSS</span>
-                                <br>
-                                <span class="badge text-bg-info">mySQL</span>
-                                <span class="badge text-bg-info">Express.js</span>
-                                <span class="badge text-bg-info">sockets.io</span>
                             </p>
-                            <div class="text-center">
-                                <a href="https://github.com/lexslo/randm" target="_blank" class="btn btn-success">GitHub</a>
-                                <a href="https://ran-dm.herokuapp.com/chat" target="_blank" class="btn btn-success">Deployed</a>
-                            </div>
+                            <a href="https://github.com/lexslo/randm" target="_blank" class="btn btn-secondary">GitHub</a>
+                            <a href="https://ran-dm.herokuapp.com/chat" target="_blank" class="btn btn-secondary">Deployed</a>
+                        </div>
+                        <div class="card-footer">
+                            <span class="badge js-badge text-dark">JavaScript</span>
+                            <span class="badge html-badge">HTML</span>
+                            <span class="badge css-badge">CSS</span>
+                            <span class="badge text-bg-info">mySQL</span>
+                            <span class="badge ex-badge text-dark">Express.js</span>
                         </div>
                     </div>
                 </div>
@@ -183,70 +188,64 @@
             <br>
             <div class="row">
                 <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
+                    <div class="card project-card">
                         <img class="card-img-top" src="assets/images/making-waves-ss.png" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Making Waves</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Tech Blog</h6>
                             <p class="card-text about-text">
                                 Role: Creator, Full Stack Developer
-                                <br>
-                                <span class="badge text-bg-info">JavaScript</span>
-                                <span class="badge text-bg-info">HTML</span>
-                                <span class="badge text-bg-info">CSS</span>
-                                <br>
-                                <span class="badge text-bg-info">mySQL</span>
-                                <span class="badge text-bg-info">Express.js</span>
-                                <span class="badge text-bg-info">Node.js</span>
                             </p>
-                            <div class="text-center">
-                                <a href="https://github.com/lexslo/making-waves" target="_blank" class="btn btn-success">GitHub</a>
-                                <a href="https://lexslo-making-waves.herokuapp.com/" target="_blank" class="btn btn-success">Deployed</a>
-                            </div>
+                            <a href="https://github.com/lexslo/making-waves" target="_blank" class="btn btn-secondary">GitHub</a>
+                            <a href="https://lexslo-making-waves.herokuapp.com/" target="_blank" class="btn btn-secondary">Deployed</a>
+                        </div>
+                        <div class="card-footer">
+                            <span class="badge js-badge text-dark">JavaScript</span>
+                            <span class="badge text-bg-info">mySQL</span>
+                            <span class="badge ex-badge text-dark">Express.js</span>
+                            <span class="badge node-badge">Node.js</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
+                    <div class="card project-card">
                         <img class="card-img-top" src="assets/images/kol-ss.png" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Koality of Life</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Web Application</h6>
                             <p class="card-text about-text">
                                 Role: JavaScript and  UI/UX Design
-                                <br>
-                                <span class="badge text-bg-info">JavaScript</span>
-                                <span class="badge text-bg-info">HTML</span>
-                                <span class="badge text-bg-info">CSS</span>
-                                <span class="badge text-bg-info">ZURB Foundation</span>
                             </p>
-                            <div class="text-center">
-                                <a href="https://github.com/lexslo/koality-of-life" target="_blank" class="btn btn-success">GitHub</a>
-                                <a href="https://lexslo.github.io/koality-of-life/" target="_blank" class="btn btn-success">Deployed</a>
-                            </div>
+                            <a href="https://github.com/lexslo/koality-of-life" target="_blank" class="btn btn-secondary">GitHub</a>
+                            <a href="https://lexslo.github.io/koality-of-life/" target="_blank" class="btn btn-secondary">Deployed</a>
+                        </div>
+                        <div class="card-footer">
+                            <span class="badge js-badge text-dark">JavaScript</span>
+                            <span class="badge html-badge">HTML</span>
+                            <span class="badge css-badge">CSS</span>
+                            <span class="badge text-bg-primary">ZURB Foundation</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
+                    <div class="card project-card">
                         <img class="card-img-top" src="assets/images/weather-dash-ss.png" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Weather Dashboard</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Web Application</h6>
                             <p class="card-text about-text">
                                 Role: Creator, UI/UX Design
-                                <br>
-                                <span class="badge text-bg-info">JavaScript</span>
-                                <span class="badge text-bg-info">HTML</span>
-                                <span class="badge text-bg-info">CSS</span>
-                                <span class="badge text-bg-info">Bootstrap</span>
                             </p>
-                            <div class="text-center">
-                                <a href="https://github.com/lexslo/weather-dashboard" target="_blank" class="btn btn-success">GitHub</a>
-                                <a href="https://lexslo.github.io/weather-dashboard/" target="_blank" class="btn btn-success">Deployed</a>
-                            </div>
+                            <a href="https://github.com/lexslo/weather-dashboard" target="_blank" class="btn btn-secondary">GitHub</a>
+                            <a href="https://lexslo.github.io/weather-dashboard/" target="_blank" class="btn btn-secondary">Deployed</a>
+                        </div>
+                        <div class="card-footer">
+                            <span class="badge js-badge text-dark">JavaScript</span>
+                            <span class="badge html-badge">HTML</span>
+                            <span class="badge css-badge">CSS</span>
+                            <span class="badge text-bg-primary">Bootstrap</span>
                         </div>
                     </div>
                 </div>
@@ -256,10 +255,10 @@
     <!-- music section-->
     <section id="music">
         <div class="container about-text">
-            <h1 class="text-center"><i class="fa-solid fa-music"></i> Music</h1>
+            <h1 class="text-center text-light"><i class="fa-solid fa-music"></i> Music</h1>
             <div class="row">
                 <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
+                    <div class="card project-card">
                         <div class="card-body">
                             <span class="badge text-bg-info">Sound Design</span>
                             <h4 class="card-title mt-3">Delazed Effect Example</h4>
@@ -274,7 +273,7 @@
                     </div>  
                 </div>
                 <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
+                    <div class="card project-card">
                         <div class="card-body">
                             <span class="badge text-bg-info">Sound Design</span>
                             <span class="badge text-bg-success">Ableton</span>
@@ -291,7 +290,7 @@
                 </div>
 
                 <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
+                    <div class="card project-card">
                         <div class="card-body">
                             <span class="badge text-bg-info">Experimental</span>
                             <span class="badge text-bg-success">Ableton</span>
@@ -310,7 +309,7 @@
 
             <div class="row">
                 <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
+                    <div class="card project-card">
                         <div class="card-body">
                             <span class="badge text-bg-info">Indie Pop</span>
                             <span class="badge text-bg-success">Ableton</span>
@@ -327,7 +326,7 @@
                 </div>
 
                 <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
+                    <div class="card project-card">
                         <div class="card-body">
                             <span class="badge text-bg-info">Synth Pop</span>
                             <span class="badge text-bg-success">Ableton</span>
@@ -344,7 +343,7 @@
                 </div>
 
                 <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
+                    <div class="card project-card">
                         <div class="card-body">
                             <span class="badge text-bg-info">Sound Design</span>
                             <span class="badge text-bg-success">Kyma</span>
@@ -379,7 +378,7 @@
 
 
     <!-- Scripts -->
-    <script src="assets/js/script.js"></script>
+    <!-- <script src="assets/js/script.js"></script> -->
     <script src="https://kit.fontawesome.com/2e88e8d04b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>

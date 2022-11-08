@@ -114,7 +114,7 @@ audio::-webkit-media-controls-panel {
 }
 
 /* spacing on all sections */
-#about, #code, #music, #contact {
+#about, #code, #music {
     margin-top: 4rem;
     padding-top: 4rem;
 }

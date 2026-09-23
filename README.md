@@ -1,4 +1,4 @@
-# Lex Slovik - Portfolio Project
+# Lex Meadows - Portfolio Project
 
 ## Objective
 Create a deployed portfolio of work samples for a potential employer to review and assess whether I am a good candidate for an open position.
